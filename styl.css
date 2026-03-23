@@ -1,0 +1,84 @@
+* {
+    font-family: Garamond;
+    color: white;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    background-color: indigo;
+    text-align: center;
+    padding: 2px;
+}
+
+#lewa,
+#prawa {
+    background-color: indigo;
+    height: 600px;
+    width: 20%;
+    float: left;
+
+}
+
+main {
+    background-color: black;
+    overflow: scroll;
+    height: 600px;
+    width: 60%;
+    float: left;
+}
+
+footer {
+    background-color: indigo;
+    height: 150px;
+    width: 100%;
+    float: inline-end;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #lewa,
+    #prawa {
+        clear: both;
+        width: 100%;
+    }
+
+    main {
+        clear: both;
+        width: 100%;
+    }
+
+    body {
+        overflow: auto;
+    }
+}
+
+.img {
+    float: inline-start;    
+    text-align: center;
+    padding: 3px;
+}
+
+input {
+    color: indigo;
+    margin: 10px;
+}
+
+button {
+    color: black;
+}
+
+.punkt {
+    margin-left: 5px;
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px
+}
+li {
+    display: flex;
+}
