@@ -58,7 +58,8 @@ function script_4($connection)
         $zdjecie = $_POST['zdjecie'];
 
         $query = "INSERT INTO `gry`(`nazwa`, `opis`, `punkty`, `cena`, `zdjecie`) VALUES ('{$nazwa}','{$opis}',0,'{$cena}','{$zdjecie}');";
-    }
+        $result = mysqli_query($connection, $query);
+        }    
 }
 
 ?>
